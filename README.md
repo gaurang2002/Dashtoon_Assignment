@@ -22,7 +22,8 @@ Training a style transfer model requires two networks: a pre-trained feature ext
 
 # Evaluation Metrics:
 Structural similarity index(ssim): This metric was used to track the content feature of the transformed images in order to preserve the content of the photo.
-Limitations:
+
+# Limitations:
 Unavailability of Online Resources(GPU): Was not able to run the model for various iterations/epochs due to unavailability of GPU’s.
 Not Proper Evaluation Metric for Styling feature.
 The Transfer Network is not properly trained compared to other transfer learning used models hence results were less than expected.
