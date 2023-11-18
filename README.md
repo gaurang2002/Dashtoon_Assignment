@@ -13,8 +13,8 @@ For smooth working of this notebook please use these settings. Create a new virt
 
 
 # The loss function used are:
-Content Loss: The content cost function is making sure that the content present in the content image is captured in the generated image. As CNNs capture information about content in the higher levels, where the lower levels are more focused on individual pixel values, we use the top-most CNN layer to define the content loss function.
-Style Loss: To extract the style information from the VGG network, we use all the layers of the CNN. Furthermore, style information is measured as the amount of correlation present between features maps in a given layer. Next, a loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image.
+1. Content Loss: The content cost function is making sure that the content present in the content image is captured in the generated image. As CNNs capture information about content in the higher levels, where the lower levels are more focused on individual pixel values, we use the top-most CNN layer to define the content loss function.
+2. Style Loss: To extract the style information from the VGG network, we use all the layers of the CNN. Furthermore, style information is measured as the amount of correlation present between features maps in a given layer. Next, a loss is defined as the difference of correlation present between the feature maps computed by the generated image and the style image.
 We are taking the sum of both losses as the main loss to make sure that both style and content are leveraged together.
 
 # Architecture used:
@@ -24,14 +24,14 @@ Training a style transfer model requires two networks: a pre-trained feature ext
 Structural similarity index(ssim): This metric was used to track the content feature of the transformed images in order to preserve the content of the photo.
 
 # Limitations:
-Unavailability of Online Resources(GPU): Was not able to run the model for various iterations/epochs due to unavailability of GPU’s.
-Not Proper Evaluation Metric for Styling feature.
-The Transfer Network is not properly trained compared to other transfer learning used models hence results were less than expected.
+1. Unavailability of Online Resources(GPU): Was not able to run the model for various iterations/epochs due to unavailability of GPU’s.
+2. Not Proper Evaluation Metric for Styling feature.
+3. The Transfer Network is not properly trained compared to other transfer learning used models hence results were less than expected.
 
 # Potential Improvements:
-The Transfer Network could be trained on more data and iterations to give better results.
-A better loss function could be devised to compensate between style loss and content loss.
-Other optimisation techniques such as cross_validation, callback etc could be used to further improve performance.
+1. The Transfer Network could be trained on more data and iterations to give better results.
+2. A better loss function could be devised to compensate between style loss and content loss.
+3. Other optimisation techniques such as cross_validation, callback etc could be used to further improve performance.
 
 
 
